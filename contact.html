@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>VoxDreamz.com | Mobile Download</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/styles.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script type="text/javascript" src="scripts/gen_validatorv31.js"></script>
+      <script type="text/javascript" src="scripts/mootools.js"></script>
+  <script type="text/javascript" src="scripts/domready_fix.js"></script>
+  <script type="text/javascript" src="scripts/modal.js"></script>
+  <script type="text/javascript" src="scripts/k2.js"></script>
+  <script type="text/javascript" src="scripts/jcomments-v2.1.js?v=2"></script>
+  <script type="text/javascript" src="scripts/ajax.js"></script>
+  <script type="text/javascript" src="scripts/caption.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 520,
+		indentString: '&nbsp;&nbsp;&nbsp;',
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+
+
+  <header id="header">
+    <hgroup>
+      <img src="images/logo.png"/>
+    </hgroup>
+    <!-- ################################################################################################ -->
+    <nav id="topnav">
+      <ul class="topnav clear">
+        <li><a href="index.html">Homepage</a></li>
+        <!--
+        <li><a href="mobiledialer.html">Dialers</a>
+    <ul>
+                <li><a href="pcdialer.html">PC Dialers</a></li>
+                <li><a href="mobiledialer.html">Mobile Dialers</a></li>
+           </ul>
+  </li>
+        <li><a href="http://cdr.idialersvoip.com">Customer Login</a></li>
+  <li><a href="http://reseller.idialersvoip.com">Reseller Login</a></li>
+        <li ><a href="#">Rates</a></li>
+  <li ><a href="#">Products</a></li>
+-->
+        <li class="last active"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+</div>
+<!-- content -->
+
+<div class="wrapper row2">
+<div id="container" class="clear"><!-- Slider --><section id="featured_slide_"><!-- ########################################################################################## -->
+<ul id="featured_slide_Content" style="margin:0; padding:0;border:solid 2px #dddddd;">
+<li class="featured_slide_Image" style="display: block;"><figure><a href="#"><img src="images/demo/contactusbanner.jpg" alt="" /></a> <figcaption>
+</figcaption> </figure></li>
+<li class="clear featured_slide_Image"><!-- Important - Leave This Empty --></li>
+</ul>
+<!-- ########################################################################################## --></section><!-- main content -->
+<div id="homepage"><!-- Introduction --><section id="intro" class="clear"><article class="two_third"><section id="comments">
+<h2>Contact US</h2>
+<script type="text/javascript">// <![CDATA[
+    function validateEmail(email){
+        var regex=/[^\s@]+@[^\s@]+\.[^\s@]+/;
+        return regex.test(email);
+    }
+		function validateForm(){
+			name=document.getElementById("name").value;
+			email=document.getElementById("email").value;
+      subject=document.getElementById("subject1").value;
+      comment=document.getElementById("comment1").value;
+			if(name==""||name==null){
+				alert("Please type your name");
+				return false;
+			}
+			if(email==""||email==null){
+				alert("Please type your email");
+				return false;
+			}
+      if(!validateEmail(email)){
+        alert("Invalid email");
+        return false;
+      }
+      if(subject==""||subject==null){
+        alert("Plese type a subject");
+        return false;
+      }
+
+      if(comment==""||comment==null){
+        alert("Please type your query");
+        return false;
+      }
+			return true;
+		}
+	
+// ]]></script>
+<form method="post" action="mail.php" onsubmit="return validateForm();" name="myContactForm">
+<p><input size="22" value="" id="name" name="name" type="text" /> <label for="name"><small>Name (required)</small></label></p>
+<p><input size="22" value="" id="email" name="email" type="text" /> <label for="email"><small>Mail (required)</small></label></p>
+<p><input size="22" value="" id="subject1" name="subject" type="text" /> <label for="subject"><small>Subject (required)</small></label></p>
+<p><textarea rows="10" cols="25" id="comment1" name="comment" style="height: 128px;"></textarea> <label class="hidden" for="comment"><small>Comment (required)</small></label></p>
+<p><input value="Submit" id="submit" name="submit" type="submit" /> &nbsp; <input value="Reset" id="reset" name="reset" type="reset" /></p>
+</form></section></article><article class="one_third"><a href="#"><img style="border:solid 2px #dddddd;" src="images/demo/contact.jpg" alt="" height="300" width="300" /></a></article></section><!-- / Introduction --> <!-- ########################################################################################## --></div>
+<!-- / content body --></div>
+</div>
+
+<!-- Copyright -->
+<div class="wrapper row3">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="http://VoxDreamz.com">VoxDreamz.com</a></p>
+    <p class="fl_right">Designed by <a href="http://sksarts.com/" title="SKS Arts"> SKS Arts</a></p>
+  </footer>
+</div>
+</body>
+</html>
